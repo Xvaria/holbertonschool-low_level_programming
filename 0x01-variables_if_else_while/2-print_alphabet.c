@@ -6,12 +6,11 @@
  */
 int main(void)
 {
-int a = 97;
-while (a < 123)
+char c;
+for (c ='a'; c <= 'z'; c++)
 {
-putchar (a);
+putchar (c);
 putchar ("\n");
-a++
 }
 return (0);
 }
