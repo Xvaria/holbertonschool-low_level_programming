@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
 * main - for
-* Description: Print the a to z
 * Return: 0
 */
 int main(void)
