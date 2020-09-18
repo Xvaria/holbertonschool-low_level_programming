@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - If
- * Description: Print the number in the variable n is positive or negative
+ * main - for
+ * Description: Print the a to z
  * Return: 0
  */
 int main(void)
@@ -10,7 +10,7 @@ char c;
 for (c ='a'; c <= 'z'; c++)
 {
 putchar (c);
-putchar ("\n");
+putchar ('\n');
 }
 return (0);
 }
