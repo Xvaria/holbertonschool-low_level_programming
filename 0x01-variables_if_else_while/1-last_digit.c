@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - If
- * Description: Print the number in the variable n is positive or negative
+ * Description: Print the last number positive or negative
  * Return: 0
  */
 int main(void)
@@ -12,14 +12,14 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 a = n % 10;
-printf("Last digit of %i is %i", n, a);
+printf("Last digit of %i is %i ", n, a);
 if (a > 5)
 {
 printf("and is greater than 5\n");
 }
 else if (a == 0)
 {
-printf("and is 0\n");
+printf("0\n");
 }
 else
 {
