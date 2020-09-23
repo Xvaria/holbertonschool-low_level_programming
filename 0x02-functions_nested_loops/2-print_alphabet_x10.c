@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Print a to z x10
+ * print_alphabet_x10 - Print a to z x10
  * Description: Print a to z x10 with _putchar
  * Return: 0
  */
