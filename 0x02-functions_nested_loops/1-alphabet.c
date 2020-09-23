@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - Print a to z
+ * print_alphabet - Print a to z
  * Description: Print a to z
  * Return: 0
  */
