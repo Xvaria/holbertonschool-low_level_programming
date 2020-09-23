@@ -11,6 +11,6 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 /* 3-islower.c */
-int _islower(int c);
+int _islower(int);
 
 #endif
