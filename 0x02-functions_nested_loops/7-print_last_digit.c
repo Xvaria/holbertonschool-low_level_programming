@@ -3,7 +3,7 @@
 /**
  * print_last_digit - Print de last digit of a number
  * @a: integer
- * return: a
+ * Return: b
  */
 int print_last_digit(int a)
 {
@@ -14,6 +14,6 @@ int print_last_digit(int a)
 		a = a * -1;
 	}
 	b = a % 10;
-        _putchar(b + 48);
+	_putchar(b + 48);
 	return (b);
 }
