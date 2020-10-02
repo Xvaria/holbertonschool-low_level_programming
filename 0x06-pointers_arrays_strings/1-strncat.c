@@ -1,11 +1,27 @@
 #include "holberton.h"
 
 /**
- * reset_to_98 - update value
- * Description: update value 402 to 98
- * @n: pointer
+ * _strncat - concatenates two
+ * Description: concatenates two strings n bytes
+ * @dest: hello
+ * @src: world!
+ * @n: bytes
+ * Return: dest+src n bytes
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int a;
+	char *b;
+
+	while (dest[a] != '\0')
+	{
+		a++;
+	}
+	b = dest + a;
+	while (*src && n--)
+	{
+		*b++ = *src++;
+	}
+	*b = 0;
+	return (dest);
 }
