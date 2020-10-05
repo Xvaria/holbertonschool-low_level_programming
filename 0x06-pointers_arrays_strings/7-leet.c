@@ -1,41 +1,25 @@
 #include "holberton.h"
 
 /**
- * leet - Change string
- * Description: Change all lowercase to uppercase in string
- * @s: array
- * Return: b
+ * leet - Encode string
+ * Description: encodes a string into 1337
+ * @s: string
+ * Return: p
  */
 char *leet(char *s)
 {
-	char *b = s;
+	int a;
+	char *l = "ol2ea56t89OL2EA56T";
+	char *p = s;
 
-	while (*s != '\0')
+	while (*s)
 	{
-		if (*s == 'a' || *s == 'A')
+		for (a = 0; a < 18; a++)
 		{
-			*s = '4';
-		}
-		else if (*s == 'e' || *s == 'E')
-		{
-			*s = '3';
-		}
-		else if (*s == 'o' || *s == 'O')
-		{
-			*s = '0';
-		}
-		else if (*s == 't' || *s == 'T')
-		{
-			*s = '7';
-		}
-		else if (*s == 'l' || *s == 'L')
-		{
-			*s = '1';
-		}
-		else
-		{
+			if (*s == l[a])
+				*s = (a % 10) + 48;
 		}
 		s++;
 	}
-	return (b);
+	return (p);
 }
