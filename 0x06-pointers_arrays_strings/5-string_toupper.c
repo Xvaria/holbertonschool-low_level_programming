@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * string_toupper - Change string
+ * *string_toupper - Change string
  * Description: Change all lowercase to uppercase in string
  * @s: array
  * Return: b
