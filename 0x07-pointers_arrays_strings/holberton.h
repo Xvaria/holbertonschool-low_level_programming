@@ -16,4 +16,7 @@ unsigned int _strspn(char *s, char *accept);
 /* 4-strpbrk.c */
 char *_strpbrk(char *s, char *accept);
 
+/* 9-set_string.c */
+void set_string(char **s, char *to);
+
 #endif
