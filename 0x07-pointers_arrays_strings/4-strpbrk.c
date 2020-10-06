@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * _strspn - gets the length
- * Description: gets the length of a prefix substring
+ * _strpbrk - searches a string
+ * Description: searches a string for any of a set of bytes
  * @s: array
  * @accept: search
  * Return: b
