@@ -49,5 +49,6 @@ int _HPalindrome(char str[], int i, int f)
 int is_palindrome(char *s)
 {
 	int size = _strsize(s) - 1;
+
 	return (_HPalindrome(s, 0, size));
 }
