@@ -16,14 +16,14 @@ int _strsize(char *s)
 }
 
 /**
- * HPalindrome - Comparate in order an reverse
+ * _HPalindrome - Comparate in order an reverse
  * Description: comparate string in order and reverse for return 1 or 0
  * @str: String
  * @i: initial position
  * @f: size string
  * Return: 1 to palindrome 0 if not
  */
-int HPalindrome(char str[], int i, int f)
+int _HPalindrome(char str[], int i, int f)
 {
 	if (i == f)
 	{
@@ -49,5 +49,5 @@ int HPalindrome(char str[], int i, int f)
 int is_palindrome(char *s)
 {
 	int size = _strsize(s) - 1;
-	return (HPalindrome(s, 0, size));
+	return (_HPalindrome(s, 0, size));
 }
