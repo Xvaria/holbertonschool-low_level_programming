@@ -35,7 +35,7 @@ int _HPalindrome(char str[], int i, int f)
 	}
 	if (i < f + 1)
 	{
-		return (HPalindrome(str, i + 1, f - 1));
+		return (_HPalindrome(str, i + 1, f - 1));
 	}
 	return (1);
 }
