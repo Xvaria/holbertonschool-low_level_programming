@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * printname - prints its name
+ * main - prints its name
  * Description: prints its name, followed by a new line
  * @argc: number
  * @argv: name
