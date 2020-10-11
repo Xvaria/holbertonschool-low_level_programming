@@ -10,22 +10,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int a;
+	int a, b;
 	int c = 0;
 
+	b = 0;
 	if (argc >= 2)
 	{
 		for (a = 1; a < argc; a++)
 		{
-			if (atoi(argv[a]) != 0)
-			{
-				c += atoi(argv[a]);
-			}
-			else
+			if (argv[a][b] < '0' || argv[a][b] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
+			c += atoi(argv[a]);
+			b++;
 		}
 		printf("%i\n", c);
 		return (0);
