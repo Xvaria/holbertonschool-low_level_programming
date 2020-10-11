@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  * main - prints its name
@@ -8,7 +7,7 @@
  * @argv: name
  * Return: 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	if (argc)
 	{
