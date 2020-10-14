@@ -24,7 +24,7 @@ char *_strdup(char *str)
 			a[c] = str[c];
 			c++;
 		}
-		if (*a)
+		if (*a == *str)
 		{
 			return (a);
 		}
