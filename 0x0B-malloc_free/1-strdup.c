@@ -17,22 +17,14 @@ char *_strdup(char *str)
 		b++;
 	}
 	a = malloc(sizeof(char) * b + 1);
-	if (*str == '\0')
+	while (c < b + 1)
+	{
+		a[c] = str [c];
+		c++;
+	}
+	if (*str == '/0' || *a != *str)
 	{
 		return ('\0');
 	}
-	else
-	{
-		while (c < b + 1)
-		{
-			a[c] = str[c];
-			c++;
-		}
-		if (*a == *str)
-		{
-			return (a);
-		}
-		return ('\0');
-	}
-	return ('\0');
+	return (a);
 }
