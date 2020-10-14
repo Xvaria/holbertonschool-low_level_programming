@@ -12,6 +12,14 @@ char *str_concat(char *s1, char *s2)
 	char *a;
 	int b = 0, c = 0, d = 0, e = 0;
 
+	if (s1 == '\0')
+	{
+		s1 = "";
+	}
+	if (s2 == '\0')
+	{
+		s2 = "";
+	}
 	while (s1[b])
 	{
 		b++;
@@ -32,12 +40,11 @@ char *str_concat(char *s1, char *s2)
 		e++;
 	}
 	b = 0;
-	while (e < d)
+	while (e <= d)
 	{
 		a[e] = s2[b];
 		e++;
 		b++;
 	}
-	a[e] = 0;
 	return (a);
 }
