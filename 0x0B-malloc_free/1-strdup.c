@@ -19,16 +19,16 @@ char *_strdup(char *str)
 	a = malloc(sizeof(char) * b + 1);
 	if (*str != '\0')
 	{
-		while (c < b + 1)
+		while (*str <= '\0')
 		{
 			a[c] = str[c];
 			c++;
 		}
-		if (*a == *str)
+		if (*a != *str)
 		{
-			return (a);
+			return ('\0');
 		}
-		return (NULL);
+		return (a);
 	}
-	return (NULL);
+	return ('\0');
 }
