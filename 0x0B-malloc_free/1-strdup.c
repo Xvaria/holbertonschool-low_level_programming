@@ -24,10 +24,11 @@ char *_strdup(char *str)
 			a[c] = str[c];
 			c++;
 		}
-		return (a);
-	}
-	else
-	{
+		if (*a)
+		{
+			return (a);
+		}
 		return ('\0');
 	}
+	return ('\0');
 }
