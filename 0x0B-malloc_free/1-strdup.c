@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _strdup - newly allocated space in memory
@@ -12,14 +14,14 @@ char *_strdup(char *str)
 	char *a;
 	int b = 0, c = 0;
 
-	while (str[b] != '\0')
+	if (*str)
 	{
-		b++;
-	}
-	a = malloc(sizeof(char) * b + 1);
-	if (*str != '\0')
-	{
-		while (*str <= '\0')
+		while (str[b] != '\0')
+		{
+			b++;
+		}
+		a = malloc(sizeof(char) * b + 1);
+		while (c <= b)
 		{
 			a[c] = str[c];
 			c++;
