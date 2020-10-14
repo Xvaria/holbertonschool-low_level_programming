@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _strdup - newly allocated space in memory
@@ -11,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-	char *a;
+	char *a = '\0';
 	int b = 0, c = 0;
 
 	if (*str)
