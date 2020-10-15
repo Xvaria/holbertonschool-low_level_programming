@@ -22,29 +22,20 @@ int **alloc_grid(int width, int height)
 		a[b] = malloc(sizeof(int) * width);
 		b++;
 	}
-	if (a)
+	b = 0;
+	if (a != '\0')
 	{
-		if (a[b])
+		while (b < height)
 		{
-			b = 0;
-			while (b < height)
+			while (c < width)
 			{
-				while (c < width)
-				{
-					a[b][c] = 0;
-					c++;
-				}
-				b++;
-				c = 0;
+				a[b][c] = 0;
+				c++;
 			}
-			return (a);
+			b++;
+			c = 0;
 		}
-		while(b--)
-		{
-			free(a[b]);
-		}
-		free(a);
-		return ('\0');
+		return (a);
 	}
 	return ('\0');
 }
