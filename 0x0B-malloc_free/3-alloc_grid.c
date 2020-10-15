@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * alloc_grid - creates an array of chars
- * Description: creates an array and initializes it with a specific char
+ * alloc_grid - 2 dimensional array
+ * Description: returns a pointer to a 2 dimensional array of integers
  * @width: width array
  * @height: height array
  * Return: a or null
