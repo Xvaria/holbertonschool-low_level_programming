@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		b++;
 	}
 	b = 0;
-	if (a != '\0')
+	if (a != '\0' || a[b] != '\0')
 	{
 		while (b < height)
 		{
