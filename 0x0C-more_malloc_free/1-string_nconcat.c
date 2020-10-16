@@ -35,17 +35,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	d = 0;
 	if (n >= c)
 	{
-		while (d <= c + 1)
+		while (d <= c)
 		{
 			a[d + b] = s2[d];
 			d++;
 		}
 	}
-	while (d < n)
+	else
 	{
-		a[d + b] = s2[d];
-		d++;
+		while (d < n)
+		{
+			a[d + b] = s2[d];
+			d++;
+		}
+		a[d + b] = 0;
 	}
-	a[d + b] = 0;
 	return (a);
 }
