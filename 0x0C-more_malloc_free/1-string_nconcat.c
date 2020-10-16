@@ -2,7 +2,6 @@
 
 /**
  * string_nconcat - concatenates
- * Description: concatenates two strings
  * @s1: Holberton
  * @s2: School !!!
  * @n: bytes of s2
@@ -34,13 +33,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	d = 0;
 	if (n >= c)
-	{
 		while (d <= c)
 		{
 			a[d + b] = s2[d];
 			d++;
 		}
-	}
 	else
 	{
 		while (d < n)
