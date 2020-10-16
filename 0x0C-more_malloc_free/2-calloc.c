@@ -3,14 +3,14 @@
 /**
  * _calloc - allocates memory
  * Description: allocates memory for an array, using malloc
- * @nmemb: 
- * @size:
- * Return:
+ * @nmemb: elements
+ * @size: type of bytes
+ * Return: a or NULL
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *a;
-	int b = 0;
+	unsigned int b = 0;
 
 	if (!nmemb || !size)
 	{
