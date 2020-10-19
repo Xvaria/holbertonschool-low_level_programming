@@ -9,7 +9,7 @@ void print_array(int *a, int n)
 {
 	int b = 0;
 
-	if (b <= 0)
+	if (n <= 0)
 	{
 		printf("");
 	}
