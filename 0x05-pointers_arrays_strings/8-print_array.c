@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_array - prints elements of an array of integers, followed by a new line
+ * print_array - prints elements of an array of integers
  * @a: array
  * @n: number of element to print
  */
