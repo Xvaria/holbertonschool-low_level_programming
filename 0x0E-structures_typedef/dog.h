@@ -13,7 +13,12 @@ struct dog
 	char *owner;
 };
 
+#include <stdio.h>
+
 /* 1-init_dog.c */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+
+/* 2-print_dog.c */
+void print_dog(struct dog *d);
 
 #endif
