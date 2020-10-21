@@ -1,5 +1,5 @@
 #ifndef fpointers
-#define fponiters
+#define fpointers
 
 /* 0-print_name.c */
 void print_name(char *name, void (*f)(char *));
