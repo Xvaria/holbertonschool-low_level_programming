@@ -1,6 +1,9 @@
 #ifndef fpointers
 #define fpointers
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /* 0-print_name.c */
 void print_name(char *name, void (*f)(char *));
 
