@@ -1,9 +1,11 @@
 #include "function_pointers.h"
 
 /**
- * print_name - prints a name
- * @name: Bob, Bob Dylan
- * @f: pointer to functions
+ * int_index - searches for an integer
+ * @array: array of numbers
+ * @size: number of elements
+ * @cmp: pointer to function
+ * Return: a or -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
