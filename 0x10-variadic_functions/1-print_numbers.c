@@ -18,6 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", separator);
 		}
+		a++;
 	}
 	printf("%i", va_arg(valist, int));
 	va_end(valist);
