@@ -3,7 +3,7 @@
 /**
  * print_numbers - prints numbers, followed by a new line
  * @separator: printed between numbers
- * @n: number og arguments
+ * @n: number or arguments
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -12,17 +12,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int p;
 
 	va_start(valist, n);
-	while (a < n - 1)
+	while (a < n)
 	{
 		p = va_arg(valist, int);
 		printf("%i", p);
-		if (separator)
+		if (separator && a < n - 1)
 		{
 			printf("%s", separator);
 		}
 		a++;
 	}
-	p = va_arg(valist, int);
-	printf("%i\n", p);
+	printf("\n");
 	va_end(valist);
 }
