@@ -20,6 +20,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		a++;
 	}
-	printf("%i", va_arg(valist, int));
+	printf("%i\n", va_arg(valist, int));
 	va_end(valist);
 }
