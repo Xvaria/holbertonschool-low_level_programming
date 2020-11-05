@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 /* 0-binary_to_uint.c */
 unsigned int binary_to_uint(const char *b);
