@@ -5,11 +5,11 @@
  * @h: structure
  * @idx: position
  * @n: element
- * Return:  or NULL
+ * Return: nn or NULL
  **/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *nn, *nt, na;
+	dlistint_t *nn, *nt, *na;
 	unsigned int a = 0, i = 0;
 
 	nt = *h;
