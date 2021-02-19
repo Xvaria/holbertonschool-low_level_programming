@@ -7,25 +7,21 @@ def island_perimeter(grid):
     i = 0
     j = 0
     p = 0
-    while i < len(grid):
-        while j < len(grid[i]):
-            if grid[i][j] == 1:
-                if grid[i-1][j] == 0:
-                    p += 1
-                if grid[i+1][j] == 0:
-                    p += 1
-                if grid[i][j+1] == 0:
-                    p += 1
-                if grid[i][j-1] == 0:
-                    p += 1
-            else:
-                if grid[i-1][j] == 1:
-                    if grid[i+1][j] == 1:
-                        if grid[i][j+1] == 1:
-                            if grid[i][j-1] == 1:
-                                p -= 4
-                                return p
-            j += 1
-        j = 0
-        i += 1
+    if len(grid) > 100 or len(grid[j]) > 100:
+        pass
+    else:
+        while i < len(grid):
+            while j < len(grid[i]):
+                if grid[i][j] == 1:
+                    if grid[i-1][j] == 0:
+                        p += 1
+                    if grid[i+1][j] == 0:
+                        p += 1
+                    if grid[i][j+1] == 0:
+                        p += 1
+                    if grid[i][j-1] == 0:
+                        p += 1
+                j += 1
+            j = 0
+            i += 1
     return p
