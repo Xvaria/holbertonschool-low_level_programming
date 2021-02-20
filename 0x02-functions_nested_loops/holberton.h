@@ -37,4 +37,9 @@ int add(int, int);
 /* 11-print_to_98.c */
 void print_to_98(int);
 
+/* 12. The World looks like a multiplication-table, or a mathematical equation,
+   which, turn it how you will, balances itself */
+void print_times_table(int n);
+void print_spaces(int s);
+
 #endif
